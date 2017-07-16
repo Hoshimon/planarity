@@ -125,7 +125,7 @@ public class Level1 implements Screen {
         circle4Rectangle = new Rectangle(pos4X, pos4Y, 50,50);
         circle5Rectangle = new Rectangle(pos5X, pos5Y, 50,50);
         circle6Rectangle = new Rectangle(pos6X, pos6Y, 50,50);
-        buttonNext = new Rectangle(400, 50, 200, 50);
+        buttonNext = new Rectangle(400, 0, 200, 50);
 
         touchPos = new Vector3(Gdx.input.getX(), Gdx.graphics.getHeight() - Gdx.input.getY(), 0);
 

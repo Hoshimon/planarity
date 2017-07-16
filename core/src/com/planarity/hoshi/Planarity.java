@@ -11,7 +11,7 @@ public class Planarity extends Game {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		this.setScreen(new MainMenu(this));
+		this.setScreen(new Level2(this));
 	}
 
 	@Override

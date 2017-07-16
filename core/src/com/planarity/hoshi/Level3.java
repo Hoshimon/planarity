@@ -12,11 +12,11 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 
-public class Level2 implements Screen {
+public class Level3 implements Screen {
 
     Planarity game;
 
-    public Level2(Planarity game) {
+    public Level3(Planarity game) {
         this.game = game;
     }
 
