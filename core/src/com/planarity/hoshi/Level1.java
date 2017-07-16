@@ -131,12 +131,12 @@ public class Level1 implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         game.batch.begin();
 
-        circleRectangle = new Rectangle(posX, posY, 50, 50);
-        circle2Rectangle = new Rectangle(pos2X, pos2Y, 50,50);
-        circle3Rectangle = new Rectangle(pos3X, pos3Y, 50,50);
-        circle4Rectangle = new Rectangle(pos4X, pos4Y, 50,50);
-        circle5Rectangle = new Rectangle(pos5X, pos5Y, 50,50);
-        circle6Rectangle = new Rectangle(pos6X, pos6Y, 50,50);
+        circleRectangle = new Rectangle(posX - 75, posY - 75, 150, 150);
+        circle2Rectangle = new Rectangle(pos2X - 75, pos2Y - 75, 150, 150);
+        circle3Rectangle = new Rectangle(pos3X - 75, pos3Y - 75, 150, 150);
+        circle4Rectangle = new Rectangle(pos4X - 75, pos4Y - 75, 150, 150);
+        circle5Rectangle = new Rectangle(pos5X - 75, pos5Y - 75, 150, 150);
+        circle6Rectangle = new Rectangle(pos6X - 75, pos6Y - 75, 150, 150);
         buttonNext = new Rectangle(400, 0, 200, 50);
 
         touchPos = new Vector3(Gdx.input.getX(), Gdx.graphics.getHeight() - Gdx.input.getY(), 0);
