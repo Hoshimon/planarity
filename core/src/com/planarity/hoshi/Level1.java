@@ -53,6 +53,13 @@ public class Level1 implements Screen {
     float pos6Y;
     Vector3 touchPos;
 
+    boolean active1;
+    boolean active2;
+    boolean active3;
+    boolean active4;
+    boolean active5;
+    boolean active6;
+
     Vector2 p1;
     Vector2 p2;
     Vector2 p3;
@@ -67,6 +74,13 @@ public class Level1 implements Screen {
         circleTexture = new Texture(Gdx.files.internal("circle25.png"));
         lineTexture = new Texture(Gdx.files.internal("line.png"));
         nextlvl = new Texture(Gdx.files.internal("nextlvl.png"));
+
+        active1 = false;
+        active2 = false;
+        active3 = false;
+        active4 = false;
+        active5 = false;
+        active6 = false;
 
         shapeRenderer = new ShapeRenderer();
 
@@ -127,35 +141,47 @@ public class Level1 implements Screen {
 
         touchPos = new Vector3(Gdx.input.getX(), Gdx.graphics.getHeight() - Gdx.input.getY(), 0);
 
-        if(circleRectangle.contains(touchPos.x, touchPos.y)) {
+        if(circleRectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4 && !active4 && !active5 && !active6) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-            }
+                active1 = true;
+            } else { active1 = false; }
         }
-        if(circle2Rectangle.contains(touchPos.x, touchPos.y)) {
+        if(circle2Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active1 && !active3 && !active4 &&!active4 && !active5 && !active6) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle2.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-            }
+                active2 = true;
+            }  else { active2 = false; }
         }
-        if(circle3Rectangle.contains(touchPos.x, touchPos.y)) {
+        if(circle3Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active1 && !active4 && !active4 && !active5 && !active6) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle3.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-            }
+                active3 = true;
+            } else { active3 = false; }
         }
-        if(circle4Rectangle.contains(touchPos.x, touchPos.y)) {
+        if(circle4Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active1 && !active4 && !active5 && !active6) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle4.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-            }
+                active4 = true;
+            } else { active4 = false; }
         }
-        if(circle5Rectangle.contains(touchPos.x, touchPos.y)) {
+        if(circle5Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4 && !active4 && !active1 && !active6) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle5.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-            }
+                active5 = true;
+            } else { active5 = false; }
         }
-        if(circle6Rectangle.contains(touchPos.x, touchPos.y)) {
+        if(circle6Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4 && !active4 && !active5 && !active1) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle6.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-            }
+                active6 = true;
+            }  else { active6 = false; }
         }
 
         posX = circle.getX();

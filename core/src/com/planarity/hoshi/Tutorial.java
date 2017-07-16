@@ -47,6 +47,11 @@ public class Tutorial implements Screen {
     float pos4Y;
     Vector3 touchPos;
 
+    boolean active1;
+    boolean active2;
+    boolean active3;
+    boolean active4;
+
     Vector2 p1;
     Vector2 p2;
     Vector2 p3;
@@ -61,6 +66,11 @@ public class Tutorial implements Screen {
         tutorial1 = new Texture(Gdx.files.internal("tutorial1.png"));
         tutorial2 = new Texture(Gdx.files.internal("tutorial2.png"));
         nextlvl = new Texture(Gdx.files.internal("nextlvl.png"));
+
+        active1 = false;
+        active2 = false;
+        active3 = false;
+        active4 = false;
 
         shapeRenderer = new ShapeRenderer();
 
@@ -137,25 +147,33 @@ public class Tutorial implements Screen {
 
         touchPos = new Vector3(Gdx.input.getX(), Gdx.graphics.getHeight() - Gdx.input.getY(), 0);
 
-        if(circleRectangle.contains(touchPos.x, touchPos.y)) {
+        if(circleRectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-            }
+                active1 = true;
+            } else { active1 = false; }
         }
-        if(circle2Rectangle.contains(touchPos.x, touchPos.y)) {
+        if(circle2Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active1 && !active3 && !active4) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle2.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-            }
+                active2 = true;
+            }  else { active2 = false; }
         }
-        if(circle3Rectangle.contains(touchPos.x, touchPos.y)) {
+        if(circle3Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active1 && !active4) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle3.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-            }
+                active3 = true;
+            } else { active3 = false; }
         }
-        if(circle4Rectangle.contains(touchPos.x, touchPos.y)) {
+        if(circle4Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active1) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle4.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-            }
+                active4 = true;
+            } else { active4 = false; }
         }
 
         posX = circle.getX();
