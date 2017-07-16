@@ -98,20 +98,64 @@ public class Tutorial implements Screen {
     @Override
     public void render(float delta) {
 
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        game.batch.begin();
+
+        circleRectangle = new Rectangle(posX, posY, 50, 50);
+        circle2Rectangle = new Rectangle(pos2X, pos2Y, 50,50);
+        circle3Rectangle = new Rectangle(pos3X, pos3Y, 50,50);
+        circle4Rectangle = new Rectangle(pos4X, pos4Y, 50,50);
+        buttonNext = new Rectangle(400, 0, 200, 50);
+
+        game.batch.draw(circle, circle.getX(), circle.getY());
+        game.batch.draw(circle2, circle2.getX(), circle2.getY());
+        game.batch.draw(circle3, circle3.getX(), circle3.getY());
+        game.batch.draw(circle4, circle4.getX(), circle4.getY());
+
+        if(Intersector.intersectSegments(p1, p2, p3, p4, null)) {
+            Gdx.gl.glClearColor(1, 1, 1, 1);
+            game.batch.draw(tutorial1, 0, 400);
+        }
+        if(!Intersector.intersectSegments(p1, p2, p3, p4, null)) {
+            Gdx.gl.glClearColor(0, 1, 0, 1);
+            game.batch.draw(tutorial2, 0, 400);
+            game.batch.draw(nextlvl, 400, 0);
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                if(buttonNext.contains(touchPos.x, touchPos.y)) {
+                    game.setScreen(new Level1(game));
+                }
+            }
+        }
+
+        game.batch.end();
+
+        shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
+        shapeRenderer.setColor(0, 0, 0, 1);
+        shapeRenderer.line(posX + 12, posY + 12, pos2X + 12, pos2Y + 12);
+        shapeRenderer.line(pos3X + 12, pos3Y + 12, pos4X + 12, pos4Y + 12);
+        shapeRenderer.end();
+
+
 
         touchPos = new Vector3(Gdx.input.getX(), Gdx.graphics.getHeight() - Gdx.input.getY(), 0);
 
-        if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-            if(circleRectangle.contains(touchPos.x, touchPos.y)) {
+        if(circleRectangle.contains(touchPos.x, touchPos.y)) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
             }
-            if(circle2Rectangle.contains(touchPos.x, touchPos.y)) {
+        }
+        if(circle2Rectangle.contains(touchPos.x, touchPos.y)) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle2.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
             }
-            if(circle3Rectangle.contains(touchPos.x, touchPos.y)) {
+        }
+        if(circle3Rectangle.contains(touchPos.x, touchPos.y)) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle3.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
             }
-            if(circle4Rectangle.contains(touchPos.x, touchPos.y)) {
+        }
+        if(circle4Rectangle.contains(touchPos.x, touchPos.y)) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle4.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
             }
         }
@@ -129,37 +173,7 @@ public class Tutorial implements Screen {
         p3.set(pos3X, pos3Y);
         p4.set(pos4X, pos4Y);
 
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        game.batch.begin();
 
-        if(Intersector.intersectSegments(p1, p2, p3, p4, null)) {
-            Gdx.gl.glClearColor(1, 1, 1, 1);
-            game.batch.draw(tutorial1, 0, 400);
-        }
-        if(!Intersector.intersectSegments(p1, p2, p3, p4, null)) {
-            Gdx.gl.glClearColor(0, 1, 0, 1);
-            game.batch.draw(tutorial2, 0, 400);
-            game.batch.draw(nextlvl, 400, 0);
-        }
-
-        circleRectangle = new Rectangle(posX, posY, 50, 50);
-        circle2Rectangle = new Rectangle(pos2X, pos2Y, 50,50);
-        circle3Rectangle = new Rectangle(pos3X, pos3Y, 50,50);
-        circle4Rectangle = new Rectangle(pos4X, pos4Y, 50,50);
-        buttonNext = new Rectangle(400, 50, 200, 50);
-
-        game.batch.draw(circle, circle.getX(), circle.getY());
-        game.batch.draw(circle2, circle2.getX(), circle2.getY());
-        game.batch.draw(circle3, circle3.getX(), circle3.getY());
-        game.batch.draw(circle4, circle4.getX(), circle4.getY());
-
-        game.batch.end();
-
-        shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
-        shapeRenderer.setColor(0, 0, 0, 1);
-        shapeRenderer.line(posX + 12, posY + 12, pos2X + 12, pos2Y + 12);
-        shapeRenderer.line(pos3X + 12, pos3Y + 12, pos4X + 12, pos4Y + 12);
-        shapeRenderer.end();
     }
 
     @Override
