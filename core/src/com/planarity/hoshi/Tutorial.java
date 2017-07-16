@@ -56,9 +56,7 @@ public class Tutorial implements Screen {
 
     @Override
     public void show() {
-
-        img = new Texture("badlogic.jpg");
-        circleTexture = new Texture(Gdx.files.internal("circle_25p.png"));
+        circleTexture = new Texture(Gdx.files.internal("circle25.png"));
         lineTexture = new Texture(Gdx.files.internal("line.png"));
         tutorial1 = new Texture(Gdx.files.internal("tutorial1.png"));
         tutorial2 = new Texture(Gdx.files.internal("tutorial2.png"));

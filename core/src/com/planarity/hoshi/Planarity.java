@@ -1,9 +1,7 @@
 package com.planarity.hoshi;
 
 import com.badlogic.gdx.Game;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 
 public class Planarity extends Game {
 	SpriteBatch batch;
@@ -11,7 +9,7 @@ public class Planarity extends Game {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		this.setScreen(new Level2(this));
+		this.setScreen(new MainMenu(this));
 	}
 
 	@Override

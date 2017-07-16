@@ -64,9 +64,7 @@ public class Level1 implements Screen {
 
     @Override
     public void show() {
-
-        img = new Texture("badlogic.jpg");
-        circleTexture = new Texture(Gdx.files.internal("circle_25p.png"));
+        circleTexture = new Texture(Gdx.files.internal("circle25.png"));
         lineTexture = new Texture(Gdx.files.internal("line.png"));
         nextlvl = new Texture(Gdx.files.internal("nextlvl.png"));
 
