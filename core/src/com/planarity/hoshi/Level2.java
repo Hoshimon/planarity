@@ -232,86 +232,73 @@ public class Level2 implements Screen {
         p10.set(pos10X, pos10Y);
 
         if(Intersector.intersectSegments(p1, p5, p10, p6, null) ||
-                Intersector.intersectSegments(p1, p5, p3, p6, null) ||
-                Intersector.intersectSegments(p1, p5, p3, p7, null) ||
                 Intersector.intersectSegments(p1, p5, p2, p7, null) ||
-                Intersector.intersectSegments(p1, p5, p7, p8, null) ||
-                Intersector.intersectSegments(p1, p5, p7, p10, null) ||
-                Intersector.intersectSegments(p1, p5, p9, p10, null) ||
-                Intersector.intersectSegments(p1, p5, p8, p9, null) ||
+                Intersector.intersectSegments(p1, p5, p2, p8, null) ||
+                Intersector.intersectSegments(p1, p5, p3, p7, null) ||
+                Intersector.intersectSegments(p1, p5, p3, p6, null) ||
                 Intersector.intersectSegments(p1, p5, p4, p8, null) ||
                 Intersector.intersectSegments(p1, p5, p4, p9, null) ||
+                Intersector.intersectSegments(p1, p5, p7, p10, null) ||
+                Intersector.intersectSegments(p1, p5, p8, p10, null) ||
+                Intersector.intersectSegments(p1, p5, p9, p10, null) ||
 
-                Intersector.intersectSegments(p1, p9, p5, p10, null) ||
-                Intersector.intersectSegments(p1, p9, p5, p6, null) ||
-                Intersector.intersectSegments(p1, p9, p10, p6, null) ||
-                Intersector.intersectSegments(p1, p9, p3, p6, null) ||
-                Intersector.intersectSegments(p1, p9, p3, p7, null) ||
                 Intersector.intersectSegments(p1, p9, p2, p7, null) ||
-                Intersector.intersectSegments(p1, p9, p7, p8, null) ||
-                Intersector.intersectSegments(p1, p9, p7, p10, null) ||
-                Intersector.intersectSegments(p1, p9, p9, p10, null) ||
+                Intersector.intersectSegments(p1, p9, p2, p8, null) ||
+                Intersector.intersectSegments(p1, p9, p3, p7, null) ||
+                Intersector.intersectSegments(p1, p9, p3, p6, null) ||
                 Intersector.intersectSegments(p1, p9, p4, p8, null) ||
+                Intersector.intersectSegments(p1, p9, p4, p9, null) ||
+                Intersector.intersectSegments(p1, p9, p5, p6, null) ||
+                Intersector.intersectSegments(p1, p9, p5, p10, null) ||
+                Intersector.intersectSegments(p1, p9, p7, p10, null) ||
+                Intersector.intersectSegments(p1, p9, p8, p9, null) ||
 
-                Intersector.intersectSegments(p5, p10, p5, p6, null) ||
-                Intersector.intersectSegments(p5, p10, p3, p6, null) ||
-                Intersector.intersectSegments(p5, p10, p3, p7, null) ||
-                Intersector.intersectSegments(p5, p10, p2, p7, null) ||
-                Intersector.intersectSegments(p5, p10, p7, p8, null) ||
-                Intersector.intersectSegments(p5, p10, p8, p9, null) ||
-                Intersector.intersectSegments(p5, p10, p4, p8, null) ||
-                Intersector.intersectSegments(p5, p10, p4, p9, null) ||
-
-                Intersector.intersectSegments(p5, p6, p3, p7, null) ||
-                Intersector.intersectSegments(p5, p6, p2, p7, null) ||
-                Intersector.intersectSegments(p5, p6, p7, p8, null) ||
-                Intersector.intersectSegments(p5, p6, p7, p10, null) ||
-                Intersector.intersectSegments(p5, p6, p9, p10, null) ||
-                Intersector.intersectSegments(p5, p6, p8, p9, null) ||
-                Intersector.intersectSegments(p5, p6, p4, p8, null) ||
-                Intersector.intersectSegments(p5, p6, p4, p9, null) ||
-
-                Intersector.intersectSegments(p10, p6, p3, p7, null) ||
-                Intersector.intersectSegments(p10, p6, p2, p7, null) ||
-                Intersector.intersectSegments(p10, p6, p7, p8, null) ||
-                Intersector.intersectSegments(p10, p6, p8, p9, null) ||
-                Intersector.intersectSegments(p10, p6, p4, p8, null) ||
-                Intersector.intersectSegments(p10, p6, p4, p9, null) ||
-
-                Intersector.intersectSegments(p3, p6, p3, p7, null) ||
-                Intersector.intersectSegments(p3, p6, p2, p7, null) ||
-                Intersector.intersectSegments(p3, p6, p7, p8, null) ||
-                Intersector.intersectSegments(p3, p6, p7, p10, null) ||
-                Intersector.intersectSegments(p3, p6, p8, p10, null) ||
-                Intersector.intersectSegments(p3, p6, p7, p9, null) ||
-                Intersector.intersectSegments(p3, p6, p4, p9, null) ||
-                Intersector.intersectSegments(p3, p6, p4, p8, null) ||
-
-                Intersector.intersectSegments(p3, p7, p9, p10, null) ||
-                Intersector.intersectSegments(p3, p7, p8, p9, null) ||
-                Intersector.intersectSegments(p3, p7, p4, p8, null) ||
-                Intersector.intersectSegments(p3, p7, p4, p9, null) ||
-
-                Intersector.intersectSegments(p2, p7, p9, p10, null) ||
-                Intersector.intersectSegments(p2, p7, p8, p9, null) ||
+                Intersector.intersectSegments(p2, p7, p3, p6, null) ||
                 Intersector.intersectSegments(p2, p7, p4, p8, null) ||
                 Intersector.intersectSegments(p2, p7, p4, p9, null) ||
+                Intersector.intersectSegments(p2, p7, p5, p6, null) ||
+                Intersector.intersectSegments(p2, p7, p5, p10, null) ||
+                Intersector.intersectSegments(p2, p7, p8, p9, null) ||
+                Intersector.intersectSegments(p2, p7, p9, p10, null) ||
 
-                Intersector.intersectSegments(p7, p8, p9, p10, null) ||
-                Intersector.intersectSegments(p7, p8, p4, p9, null) ||
-
-                Intersector.intersectSegments(p2, p8, p1, p5, null) ||
-                Intersector.intersectSegments(p2, p8, p1, p9, null) ||
-                Intersector.intersectSegments(p2, p8, p5, p10, null) ||
-                Intersector.intersectSegments(p2, p8, p10, p6, null) ||
-                Intersector.intersectSegments(p2, p8, p3, p6, null) ||
                 Intersector.intersectSegments(p2, p8, p3, p7, null) ||
-                Intersector.intersectSegments(p2, p8, p2, p7, null) ||
+                Intersector.intersectSegments(p2, p8, p3, p6, null) ||
+                Intersector.intersectSegments(p2, p8, p4, p9, null) ||
+                Intersector.intersectSegments(p2, p8, p5, p6, null) ||
+                Intersector.intersectSegments(p2, p8, p5, p10, null) ||
                 Intersector.intersectSegments(p2, p8, p7, p10, null) ||
                 Intersector.intersectSegments(p2, p8, p9, p10, null) ||
-                Intersector.intersectSegments(p2, p8, p4, p9, null) ||
 
-                Intersector.intersectSegments(p9, p10, p4, p8, null)) {
+                Intersector.intersectSegments(p3, p7, p4, p8, null) ||
+                Intersector.intersectSegments(p3, p7, p4, p9, null) ||
+                Intersector.intersectSegments(p3, p7, p5, p6, null) ||
+                Intersector.intersectSegments(p3, p7, p5, p10, null) ||
+                Intersector.intersectSegments(p3, p7, p8, p9, null) ||
+                Intersector.intersectSegments(p3, p7, p9, p10, null) ||
+
+                Intersector.intersectSegments(p3, p6, p4, p8, null) ||
+                Intersector.intersectSegments(p3, p6, p5, p10, null) ||
+                Intersector.intersectSegments(p3, p6, p7, p10, null) ||
+                Intersector.intersectSegments(p3, p6, p8, p9, null) ||
+                Intersector.intersectSegments(p3, p6, p9, p10, null) ||
+
+                Intersector.intersectSegments(p4, p8, p5, p6, null) ||
+                Intersector.intersectSegments(p4, p8, p5, p10, null) ||
+                Intersector.intersectSegments(p4, p8, p7, p10, null) ||
+                Intersector.intersectSegments(p4, p8, p9, p10, null) ||
+
+                Intersector.intersectSegments(p4, p9, p5, p6, null) ||
+                Intersector.intersectSegments(p4, p9, p5, p10, null) ||
+                Intersector.intersectSegments(p4, p9, p7, p10, null) ||
+                Intersector.intersectSegments(p4, p9, p9, p10, null) ||
+
+                Intersector.intersectSegments(p5, p6, p7, p10, null) ||
+                Intersector.intersectSegments(p5, p6, p8, p9, null) ||
+                Intersector.intersectSegments(p5, p6, p9, p10, null) ||
+
+                Intersector.intersectSegments(p5, p10, p8, p9, null) ||
+
+                Intersector.intersectSegments(p7, p10, p8, p9, null)) {
             Gdx.gl.glClearColor(1, 1, 1, 1);
         }
         else {

@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cfdbc56-024b-4ca3-b467-b0fa7939ed88" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level1.java" afterPath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java" afterPath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Tutorial.java" afterPath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Tutorial.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -68,7 +66,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Planarity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Planarity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Planarity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -106,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level2.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Level2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3218">
-              <caret line="405" column="65" lean-forward="true" selection-start-line="405" selection-start-column="65" selection-end-line="405" selection-end-column="65" />
+            <state relative-caret-position="330">
+              <caret line="300" column="68" lean-forward="false" selection-start-line="300" selection-start-column="68" selection-end-line="300" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -593,7 +591,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27945206" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15479451" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -948,16 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3218">
-          <caret line="405" column="65" lean-forward="true" selection-start-line="405" selection-start-column="65" selection-end-line="405" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Tutorial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -984,6 +972,16 @@
             <element signature="imports" expanded="true" />
             <element signature="e#311#312#0" expanded="true" />
             <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="300" column="68" lean-forward="false" selection-start-line="300" selection-start-column="68" selection-end-line="300" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
