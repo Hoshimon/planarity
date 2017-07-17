@@ -20,11 +20,9 @@ public class Level1 implements Screen {
         this.game = game;
     }
 
-
-    Texture img;
     Texture nextlvl;
     private Texture circleTexture;
-    private Texture lineTexture;
+    private Texture retry;
     private Sprite circle;
     private Sprite circle2;
     private Sprite circle3;
@@ -38,6 +36,7 @@ public class Level1 implements Screen {
     private Rectangle circle5Rectangle;
     private Rectangle circle6Rectangle;
     private Rectangle buttonNext;
+    private Rectangle buttonRetry;
 
     float posX;
     float posY;
@@ -72,7 +71,7 @@ public class Level1 implements Screen {
     @Override
     public void show() {
         circleTexture = new Texture(Gdx.files.internal("circle25.png"));
-        lineTexture = new Texture(Gdx.files.internal("line.png"));
+        retry = new Texture(Gdx.files.internal("retry.png"));
         nextlvl = new Texture(Gdx.files.internal("nextlvl.png"));
 
         active1 = false;
@@ -138,46 +137,47 @@ public class Level1 implements Screen {
         circle5Rectangle = new Rectangle(pos5X - 75, pos5Y - 75, 150, 150);
         circle6Rectangle = new Rectangle(pos6X - 75, pos6Y - 75, 150, 150);
         buttonNext = new Rectangle(400, 0, 200, 50);
+        buttonRetry = new Rectangle(10, 10, 50, 50);
 
         touchPos = new Vector3(Gdx.input.getX(), Gdx.graphics.getHeight() - Gdx.input.getY(), 0);
 
         if(circleRectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active4 && !active4 && !active5 && !active6) {
+                !active2 && !active3 && !active4 && !active5 && !active6) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
                 active1 = true;
             } else { active1 = false; }
         }
         if(circle2Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active1 && !active3 && !active4 &&!active4 && !active5 && !active6) {
+                !active1 && !active3 &&!active4 && !active5 && !active6) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle2.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
                 active2 = true;
             }  else { active2 = false; }
         }
         if(circle3Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active1 && !active4 && !active4 && !active5 && !active6) {
+                !active2 && !active1 && !active4 && !active5 && !active6) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle3.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
                 active3 = true;
             } else { active3 = false; }
         }
         if(circle4Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active1 && !active4 && !active5 && !active6) {
+                !active2 && !active3 && !active1 && !active5 && !active6) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle4.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
                 active4 = true;
             } else { active4 = false; }
         }
         if(circle5Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active4 && !active4 && !active1 && !active6) {
+                !active2 && !active3 && !active4 && !active1 && !active6) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle5.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
                 active5 = true;
             } else { active5 = false; }
         }
         if(circle6Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active4 && !active4 && !active5 && !active1) {
+                !active2 && !active3 && !active4 && !active5 && !active1) {
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
                 circle6.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
                 active6 = true;
@@ -237,12 +237,25 @@ public class Level1 implements Screen {
             }
         }
 
+        if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+            if(buttonRetry.contains(touchPos.x, touchPos.y)) {
+                circle.setPosition(Gdx.graphics.getWidth()/4 - circle.getWidth()/2, Gdx.graphics.getHeight()/4*3 - circle.getHeight()/2);
+                circle2.setPosition(Gdx.graphics.getWidth()/4*3 - circle.getWidth()/2, Gdx.graphics.getHeight()/4*3 - circle.getHeight()/2);
+                circle3.setPosition(150 - circle.getWidth()/4 - circle.getWidth()/2, Gdx.graphics.getHeight()/4 - circle.getHeight()/2);
+                circle4.setPosition(Gdx.graphics.getWidth()/4*3 - circle.getWidth()/2, Gdx.graphics.getHeight()/4 - circle.getHeight()/2);
+                circle5.setPosition(Gdx.graphics.getWidth()/4 - circle.getWidth()/2 - 100, Gdx.graphics.getHeight()/2 - circle.getHeight()/2);
+                circle6.setPosition(Gdx.graphics.getWidth()/4*3 - circle.getWidth()/2 + 100, Gdx.graphics.getHeight()/2 - circle.getHeight()/2);
+            }
+        }
+
         game.batch.draw(circle, circle.getX(), circle.getY());
         game.batch.draw(circle2, circle2.getX(), circle2.getY());
         game.batch.draw(circle3, circle3.getX(), circle3.getY());
         game.batch.draw(circle4, circle4.getX(), circle4.getY());
         game.batch.draw(circle5, circle5.getX(), circle5.getY());
         game.batch.draw(circle6, circle6.getX(), circle6.getY());
+
+        game.batch.draw(retry, 10, 10, 50, 50);
 
         game.batch.end();
 

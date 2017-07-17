@@ -7,55 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cfdbc56-024b-4ca3-b467-b0fa7939ed88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/badlogic.jpg" afterPath="$PROJECT_DIR$/core/assets/badlogic.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/circle.png" afterPath="$PROJECT_DIR$/core/assets/circle.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/circle25.png" afterPath="$PROJECT_DIR$/core/assets/circle25.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/circle_50p.png" afterPath="$PROJECT_DIR$/core/assets/circle_50p.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/line.png" afterPath="$PROJECT_DIR$/core/assets/line.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/menu.png" afterPath="$PROJECT_DIR$/core/assets/menu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/nani/tutorial1.png" afterPath="$PROJECT_DIR$/core/assets/nani/tutorial1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/nani/tutorial2.png" afterPath="$PROJECT_DIR$/core/assets/nani/tutorial2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/nextlvl.png" afterPath="$PROJECT_DIR$/core/assets/nextlvl.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/playbutton.png" afterPath="$PROJECT_DIR$/core/assets/playbutton.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/tutorial1.png" afterPath="$PROJECT_DIR$/core/assets/tutorial1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/tutorial2.png" afterPath="$PROJECT_DIR$/core/assets/tutorial2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/Level1.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/Level1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/Level2.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/Level2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/Level3.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/Level3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/MainMenu.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/MainMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/Planarity.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/Planarity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/Tutorial.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/planarity/hoshi/Tutorial.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop/build/classes/main/com/planarity/hoshi/desktop/DesktopLauncher.class" afterPath="$PROJECT_DIR$/desktop/build/classes/main/com/planarity/hoshi/desktop/DesktopLauncher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop/build/libs/desktop-1.0.jar" afterPath="$PROJECT_DIR$/desktop/build/libs/desktop-1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Planarity_jar/Planarity.jar" afterPath="$PROJECT_DIR$/out/artifacts/Planarity_jar/Planarity.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/core_jar/core.jar" afterPath="$PROJECT_DIR$/out/artifacts/core_jar/core.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/com/planarity/hoshi/Level2.class" afterPath="$PROJECT_DIR$/out/production/core/com/planarity/hoshi/Level2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Planarity.iml" afterPath="$PROJECT_DIR$/Planarity.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Planarity.ipr" afterPath="$PROJECT_DIR$/Planarity.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Planarity.iws" afterPath="$PROJECT_DIR$/Planarity.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build.gradle" afterPath="$PROJECT_DIR$/core/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/tmp/jar/MANIFEST.MF" afterPath="$PROJECT_DIR$/core/build/tmp/jar/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/core.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level1.java" afterPath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java" afterPath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/planarity/hoshi/MainMenu.java" afterPath="$PROJECT_DIR$/core/src/com/planarity/hoshi/MainMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Planarity.java" afterPath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Planarity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Tutorial.java" afterPath="$PROJECT_DIR$/core/src/com/planarity/hoshi/Tutorial.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src1/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/core/src1/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src2/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/core/src2/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop/build.gradle" afterPath="$PROJECT_DIR$/desktop/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop/build/tmp/dist/MANIFEST.MF" afterPath="$PROJECT_DIR$/desktop/build/tmp/dist/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop/desktop.iml" afterPath="$PROJECT_DIR$/desktop/desktop.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/desktop/src/com/planarity/hoshi/desktop/DesktopLauncher.java" afterPath="$PROJECT_DIR$/desktop/src/com/planarity/hoshi/desktop/DesktopLauncher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -114,11 +68,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Planarity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Planarity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Planarity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#311#312#0" expanded="true" />
@@ -128,21 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DesktopLauncher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/desktop/src/com/planarity/hoshi/desktop/DesktopLauncher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tutorial.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tutorial.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Tutorial.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1117">
-              <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+            <state relative-caret-position="371">
+              <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="38" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,8 +97,8 @@
       <file leaf-file-name="Level1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Level1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="2343">
+              <caret line="239" column="8" lean-forward="true" selection-start-line="239" selection-start-column="8" selection-end-line="248" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,8 +109,8 @@
       <file leaf-file-name="Level2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="27" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
+            <state relative-caret-position="3218">
+              <caret line="405" column="65" lean-forward="true" selection-start-line="405" selection-start-column="65" selection-end-line="405" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,19 +125,6 @@
               <caret line="265" column="15" lean-forward="false" selection-start-line="265" selection-start-column="15" selection-end-line="265" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/MainMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="51" />
-              <folding>
-                <element signature="e#507#508#0" expanded="false" />
-                <element signature="e#537#538#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -221,12 +152,12 @@
       <list>
         <option value="$PROJECT_DIR$/core/src/com/planarity/hoshi/MainClass.java" />
         <option value="$PROJECT_DIR$/core/src/com/planarity/hoshi/MainMenu.java" />
-        <option value="$PROJECT_DIR$/core/src/com/planarity/hoshi/Tutorial.java" />
         <option value="$PROJECT_DIR$/desktop/src/com/planarity/hoshi/desktop/DesktopLauncher.java" />
-        <option value="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java" />
-        <option value="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level1.java" />
         <option value="$PROJECT_DIR$/core/src/com/planarity/hoshi/Planarity.java" />
         <option value="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level3.java" />
+        <option value="$PROJECT_DIR$/core/src/com/planarity/hoshi/Tutorial.java" />
+        <option value="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level1.java" />
+        <option value="$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java" />
       </list>
     </option>
   </component>
@@ -662,7 +593,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124657534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27945206" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -997,46 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/desktop/src/com/planarity/hoshi/desktop/DesktopLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Level1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Planarity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Level3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1047,12 +938,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Tutorial.java">
+    <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Level1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1117">
-          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        <state relative-caret-position="2343">
+          <caret line="239" column="8" lean-forward="true" selection-start-line="239" selection-start-column="8" selection-end-line="248" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Level2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3218">
+          <caret line="405" column="65" lean-forward="true" selection-start-line="405" selection-start-column="65" selection-end-line="405" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Tutorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desktop/src/com/planarity/hoshi/desktop/DesktopLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/planarity/hoshi/Planarity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
           </folding>
         </state>
       </provider>

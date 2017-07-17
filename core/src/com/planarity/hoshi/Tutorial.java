@@ -26,7 +26,7 @@ public class Tutorial implements Screen {
     Texture tutorial2;
     Texture nextlvl;
     private Texture circleTexture;
-    private Texture lineTexture;
+    private Texture retry;
     private Sprite circle;
     private Sprite circle2;
     private Sprite circle3;
@@ -36,6 +36,7 @@ public class Tutorial implements Screen {
     private Rectangle circle3Rectangle;
     private Rectangle circle4Rectangle;
     private Rectangle buttonNext;
+    private Rectangle buttonRetry;
 
     float posX;
     float posY;
@@ -62,7 +63,7 @@ public class Tutorial implements Screen {
     @Override
     public void show() {
         circleTexture = new Texture(Gdx.files.internal("circle25.png"));
-        lineTexture = new Texture(Gdx.files.internal("line.png"));
+        retry = new Texture(Gdx.files.internal("retry.png"));
         tutorial1 = new Texture(Gdx.files.internal("tutorial1.png"));
         tutorial2 = new Texture(Gdx.files.internal("tutorial2.png"));
         nextlvl = new Texture(Gdx.files.internal("nextlvl.png"));
@@ -114,11 +115,22 @@ public class Tutorial implements Screen {
         circle3Rectangle = new Rectangle(pos3X - 75, pos3Y - 75, 150,150);
         circle4Rectangle = new Rectangle(pos4X - 75, pos4Y - 75, 150,150);
         buttonNext = new Rectangle(400, 0, 200, 50);
+        buttonRetry = new Rectangle(10, 10, 50, 50);
 
         game.batch.draw(circle, circle.getX(), circle.getY());
         game.batch.draw(circle2, circle2.getX(), circle2.getY());
         game.batch.draw(circle3, circle3.getX(), circle3.getY());
         game.batch.draw(circle4, circle4.getX(), circle4.getY());
+        game.batch.draw(retry, 10, 10, 50, 50);
+
+        if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+            if(buttonRetry.contains(touchPos.x, touchPos.y)) {
+                circle.setPosition(Gdx.graphics.getWidth()/2 - circle.getWidth()/2, 500 - circle.getHeight()/2);
+                circle2.setPosition(Gdx.graphics.getWidth()/2 - circle.getWidth()/2, 100 - circle.getHeight()/2);
+                circle3.setPosition(150 - circle.getWidth()/2, Gdx.graphics.getHeight()/2 - circle.getHeight()/2);
+                circle4.setPosition(450 - circle.getWidth()/2, Gdx.graphics.getHeight()/2 - circle.getHeight()/2);
+            }
+        }
 
         if(Intersector.intersectSegments(p1, p2, p3, p4, null)) {
             Gdx.gl.glClearColor(1, 1, 1, 1);
@@ -142,8 +154,6 @@ public class Tutorial implements Screen {
         shapeRenderer.line(posX + 12, posY + 12, pos2X + 12, pos2Y + 12);
         shapeRenderer.line(pos3X + 12, pos3Y + 12, pos4X + 12, pos4Y + 12);
         shapeRenderer.end();
-
-
 
         touchPos = new Vector3(Gdx.input.getX(), Gdx.graphics.getHeight() - Gdx.input.getY(), 0);
 

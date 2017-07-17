@@ -24,7 +24,7 @@ public class Level2 implements Screen {
     Texture img;
     Texture nextlvl;
     private Texture circleTexture;
-    private Texture lineTexture;
+    private Texture retry;
     private Sprite circle;
     private Sprite circle2;
     private Sprite circle3;
@@ -46,6 +46,7 @@ public class Level2 implements Screen {
     private Rectangle circle9Rectangle;
     private Rectangle circle10Rectangle;
     private Rectangle buttonNext;
+    private Rectangle buttonRetry;
 
     float posX;
     float posY;
@@ -96,7 +97,8 @@ public class Level2 implements Screen {
     @Override
     public void show() {
         circleTexture = new Texture(Gdx.files.internal("circle25.png"));
-        lineTexture = new Texture(Gdx.files.internal("line.png"));
+        retry = new Texture(Gdx.files.internal("retry.png"));
+        nextlvl = new Texture(Gdx.files.internal("nextlvl.png"));
         nextlvl = new Texture(Gdx.files.internal("nextlvl.png"));
 
         shapeRenderer = new ShapeRenderer();
@@ -194,10 +196,9 @@ public class Level2 implements Screen {
         circle9Rectangle = new Rectangle(pos9X - 75, pos9Y - 75, 150, 150);
         circle10Rectangle = new Rectangle(pos10X - 75, pos10Y - 75, 150, 150);
         buttonNext = new Rectangle(400, 50, 200, 50);
+        buttonRetry = new Rectangle(10, 10, 50, 50);
 
         touchPos = new Vector3(Gdx.input.getX(), Gdx.graphics.getHeight() - Gdx.input.getY(), 0);
-
-
 
         posX = circle.getX();
         posY = circle.getY();
@@ -404,6 +405,22 @@ public class Level2 implements Screen {
         game.batch.draw(circle8, circle8.getX(), circle8.getY());
         game.batch.draw(circle9, circle9.getX(), circle9.getY());
         game.batch.draw(circle10, circle10.getX(), circle10.getY());
+        game.batch.draw(retry, 10, 10, 50, 50);
+
+        if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+            if(buttonRetry.contains(touchPos.x, touchPos.y)) {
+                circle.setPosition(Gdx.graphics.getWidth()/4 - circle.getWidth()/2, Gdx.graphics.getHeight()/4*3 - circle.getHeight()/2);
+                circle2.setPosition(Gdx.graphics.getWidth()/4*3 - circle.getWidth()/2, Gdx.graphics.getHeight()/4*3 - circle.getHeight()/2);
+                circle3.setPosition(150 - circle.getWidth()/4 - circle.getWidth()/2, Gdx.graphics.getHeight()/4 - circle.getHeight()/2);
+                circle4.setPosition(Gdx.graphics.getWidth()/4*3 - circle.getWidth()/2, Gdx.graphics.getHeight()/4 - circle.getHeight()/2);
+                circle5.setPosition(Gdx.graphics.getWidth()/4 - circle.getWidth()/2 - 100, Gdx.graphics.getHeight()/2 - circle.getHeight()/2);
+                circle6.setPosition(Gdx.graphics.getWidth()/4*3 - circle.getWidth()/2 + 100, Gdx.graphics.getHeight()/2 - circle.getHeight()/2);
+                circle7.setPosition(Gdx.graphics.getWidth()/2 - 50, Gdx.graphics.getHeight() - 50 - circle.getHeight()/2);
+                circle8.setPosition(Gdx.graphics.getWidth()/2 + 50, Gdx.graphics.getHeight() - 50 - circle.getHeight()/2);
+                circle9.setPosition(Gdx.graphics.getWidth()/2 - 50, 50 - circle.getHeight()/2);
+                circle10.setPosition(Gdx.graphics.getWidth()/2 + 50, 50 - circle.getHeight()/2);
+            }
+        }
 
 
         game.batch.end();
