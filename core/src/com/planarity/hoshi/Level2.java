@@ -197,76 +197,7 @@ public class Level2 implements Screen {
 
         touchPos = new Vector3(Gdx.input.getX(), Gdx.graphics.getHeight() - Gdx.input.getY(), 0);
 
-        if(circleRectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active4 && !active4 && !active5 && !active6 && !active7 && !active8 && !active9 && !active10) {
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                circle.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-                active1 = true;
-            } else { active1 = false; }
-        }
-        if(circle2Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active1 && !active3 && !active4 &&!active4 && !active5 && !active6 && !active7 && !active8 && !active9 && !active10) {
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                circle2.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-                active2 = true;
-            }  else { active2 = false; }
-        }
-        if(circle3Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active1 && !active4 && !active4 && !active5 && !active6 && !active7 && !active8 && !active9 && !active10) {
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                circle3.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-                active3 = true;
-            } else { active3 = false; }
-        }
-        if(circle4Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active1 && !active4 && !active5 && !active6 && !active7 && !active8 && !active9 && !active10) {
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                circle4.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-                active4 = true;
-            } else { active4 = false; }
-        }
-        if(circle5Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active4 && !active4 && !active1 && !active6 && !active7 && !active8 && !active9 && !active10) {
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                circle5.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-                active5 = true;
-            } else { active5 = false; }
-        }
-        if(circle6Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active4 && !active4 && !active5 && !active1 && !active7 && !active8 && !active9 && !active10) {
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                circle6.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-                active6 = true;
-            }  else { active6 = false; }
-        }
-        if(circle7Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active4 && !active4 && !active5 && !active6 && !active1 && !active8 && !active9 && !active10) {
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                circle7.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-                active7 = true;
-            } else { active7 = false; }
-        }
-        if(circle8Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active4 && !active4 && !active5 && !active6 && !active7 && !active1 && !active9 && !active10) {
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                circle8.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-                active8 = true;
-            } else { active8 = false; }
-        }
-        if(circle9Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active4 && !active4 && !active5 && !active6 && !active7 && !active8 && !active1 && !active10) {
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                circle9.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-                active9 = true;
-            } else { active9 = false; }
-        }
-        if(circle10Rectangle.contains(touchPos.x, touchPos.y) &&
-                !active2 && !active3 && !active4 && !active4 && !active5 && !active6 && !active7 && !active8 && !active9 && !active1) {
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                circle10.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
-                active10 = true;
-            } else { active10 = false; }
-        }
+
 
         posX = circle.getX();
         posY = circle.getY();
@@ -390,6 +321,77 @@ public class Level2 implements Screen {
 
                 }
             }
+        }
+
+        if(circleRectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4 && !active5 && !active6 && !active7 && !active8 && !active9 && !active10) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                circle.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
+                active1 = true;
+            } else { active1 = false; }
+        }
+        if(circle2Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active1 && !active3 && !active4 &&!active5 && !active6 && !active7 && !active8 && !active9 && !active10) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                circle2.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
+                active2 = true;
+            }  else { active2 = false; }
+        }
+        if(circle3Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active1 && !active4 && !active5 && !active6 && !active7 && !active8 && !active9 && !active10) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                circle3.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
+                active3 = true;
+            } else { active3 = false; }
+        }
+        if(circle4Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active1 && !active5 && !active6 && !active7 && !active8 && !active9 && !active10) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                circle4.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
+                active4 = true;
+            } else { active4 = false; }
+        }
+        if(circle5Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4 && !active1 && !active6 && !active7 && !active8 && !active9 && !active10) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                circle5.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
+                active5 = true;
+            } else { active5 = false; }
+        }
+        if(circle6Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4 && !active5 && !active1 && !active7 && !active8 && !active9 && !active10) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                circle6.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
+                active6 = true;
+            }  else { active6 = false; }
+        }
+        if(circle7Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4 && !active5 && !active6 && !active1 && !active8 && !active9 && !active10) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                circle7.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
+                active7 = true;
+            } else { active7 = false; }
+        }
+        if(circle8Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4 && !active5 && !active6 && !active7 && !active1 && !active9 && !active10) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                circle8.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
+                active8 = true;
+            } else { active8 = false; }
+        }
+        if(circle9Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4 && !active5 && !active6 && !active7 && !active8 && !active1 && !active10) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                circle9.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
+                active9 = true;
+            } else { active9 = false; }
+        }
+        if(circle10Rectangle.contains(touchPos.x, touchPos.y) &&
+                !active2 && !active3 && !active4 && !active5 && !active6 && !active7 && !active8 && !active9 && !active1) {
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                circle10.setPosition(Gdx.input.getX() - 12, Gdx.graphics.getHeight() - Gdx.input.getY() - 12);
+                active10 = true;
+            } else { active10 = false; }
         }
 
         game.batch.draw(circle, circle.getX(), circle.getY());

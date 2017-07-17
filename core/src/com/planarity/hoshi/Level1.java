@@ -258,8 +258,6 @@ public class Level1 implements Screen {
         shapeRenderer.line(pos4X + 12, pos4Y + 12, pos5X + 12, pos5Y + 12);
         shapeRenderer.end();
 
-
-
     }
 
     @Override
